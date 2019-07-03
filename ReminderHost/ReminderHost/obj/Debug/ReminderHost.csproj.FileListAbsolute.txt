@@ -1,0 +1,14 @@
+C:\Users\hp\Desktop\Study\SEM6\SOC\Project\ReminderHost\ReminderHost\bin\Debug\ReminderHost.exe.config
+C:\Users\hp\Desktop\Study\SEM6\SOC\Project\ReminderHost\ReminderHost\bin\Debug\ReminderHost.exe
+C:\Users\hp\Desktop\Study\SEM6\SOC\Project\ReminderHost\ReminderHost\bin\Debug\ReminderHost.pdb
+C:\Users\hp\Desktop\Study\SEM6\SOC\Project\ReminderHost\ReminderHost\bin\Debug\ReminderService.dll
+C:\Users\hp\Desktop\Study\SEM6\SOC\Project\ReminderHost\ReminderHost\bin\Debug\ReminderService.pdb
+C:\Users\hp\Desktop\Study\SEM6\SOC\Project\ReminderHost\ReminderHost\bin\Debug\ReminderService.dll.config
+C:\Users\hp\Desktop\Study\SEM6\SOC\Project\ReminderHost\ReminderHost\obj\Debug\ReminderHost.csprojAssemblyReference.cache
+C:\Users\hp\Desktop\Study\SEM6\SOC\Project\ReminderHost\ReminderHost\obj\Debug\ReminderHost.Form1.resources
+C:\Users\hp\Desktop\Study\SEM6\SOC\Project\ReminderHost\ReminderHost\obj\Debug\ReminderHost.Properties.Resources.resources
+C:\Users\hp\Desktop\Study\SEM6\SOC\Project\ReminderHost\ReminderHost\obj\Debug\ReminderHost.csproj.GenerateResource.cache
+C:\Users\hp\Desktop\Study\SEM6\SOC\Project\ReminderHost\ReminderHost\obj\Debug\ReminderHost.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Study\SEM6\SOC\Project\ReminderHost\ReminderHost\obj\Debug\ReminderHost.csproj.CopyComplete
+C:\Users\hp\Desktop\Study\SEM6\SOC\Project\ReminderHost\ReminderHost\obj\Debug\ReminderHost.exe
+C:\Users\hp\Desktop\Study\SEM6\SOC\Project\ReminderHost\ReminderHost\obj\Debug\ReminderHost.pdb

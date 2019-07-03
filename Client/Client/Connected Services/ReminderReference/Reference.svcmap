@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8e0a3634-b1a3-4d68-a6ce-5f0c754cd9bb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8080/Reminder" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Reminder.wsdl" MetadataType="Wsdl" ID="e3b0098a-4630-4c92-8038-b95cbdc814ee" SourceId="1" SourceUrl="http://localhost:8080/Reminder?wsdl" />
+    <MetadataFile FileName="Reminder.xsd" MetadataType="Schema" ID="021def3f-17b2-4b7d-b426-a80363520632" SourceId="1" SourceUrl="http://localhost:8080/Reminder?xsd=xsd2" />
+    <MetadataFile FileName="Reminder1.xsd" MetadataType="Schema" ID="dc231a6d-b923-4f02-aa8e-b2c22969aac5" SourceId="1" SourceUrl="http://localhost:8080/Reminder?xsd=xsd1" />
+    <MetadataFile FileName="Reminder2.xsd" MetadataType="Schema" ID="b45b3fff-732a-47db-aed5-02465d6cfcc1" SourceId="1" SourceUrl="http://localhost:8080/Reminder?xsd=xsd0" />
+    <MetadataFile FileName="Reminder.disco" MetadataType="Disco" ID="7358b393-8cb3-4f34-ae09-6d36dd483373" SourceId="1" SourceUrl="http://localhost:8080/Reminder?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

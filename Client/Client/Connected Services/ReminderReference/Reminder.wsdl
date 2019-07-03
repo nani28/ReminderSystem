@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Reminder" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8080/Reminder?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8080/Reminder?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8080/Reminder?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ReminderService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IReminder_getAllReminders_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllReminders" />
+  </wsdl:message>
+  <wsdl:message name="IReminder_getAllReminders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllRemindersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReminder_insertReminder_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertReminder" />
+  </wsdl:message>
+  <wsdl:message name="IReminder_insertReminder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertReminderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReminder_updateReminder_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateReminder" />
+  </wsdl:message>
+  <wsdl:message name="IReminder_updateReminder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateReminderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReminder_deleteReminder_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteReminder" />
+  </wsdl:message>
+  <wsdl:message name="IReminder_deleteReminder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteReminderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReminder_authenticate_InputMessage">
+    <wsdl:part name="parameters" element="tns:authenticate" />
+  </wsdl:message>
+  <wsdl:message name="IReminder_authenticate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:authenticateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IReminder_registerUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:registerUser" />
+  </wsdl:message>
+  <wsdl:message name="IReminder_registerUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registerUserResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IReminder">
+    <wsdl:operation name="getAllReminders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReminder/getAllReminders" message="tns:IReminder_getAllReminders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReminder/getAllRemindersResponse" message="tns:IReminder_getAllReminders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertReminder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReminder/insertReminder" message="tns:IReminder_insertReminder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReminder/insertReminderResponse" message="tns:IReminder_insertReminder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateReminder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReminder/updateReminder" message="tns:IReminder_updateReminder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReminder/updateReminderResponse" message="tns:IReminder_updateReminder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteReminder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReminder/deleteReminder" message="tns:IReminder_deleteReminder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReminder/deleteReminderResponse" message="tns:IReminder_deleteReminder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="authenticate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReminder/authenticate" message="tns:IReminder_authenticate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReminder/authenticateResponse" message="tns:IReminder_authenticate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registerUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IReminder/registerUser" message="tns:IReminder_registerUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IReminder/registerUserResponse" message="tns:IReminder_registerUser_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IReminder" type="tns:IReminder">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getAllReminders">
+      <soap:operation soapAction="http://tempuri.org/IReminder/getAllReminders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertReminder">
+      <soap:operation soapAction="http://tempuri.org/IReminder/insertReminder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateReminder">
+      <soap:operation soapAction="http://tempuri.org/IReminder/updateReminder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteReminder">
+      <soap:operation soapAction="http://tempuri.org/IReminder/deleteReminder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="authenticate">
+      <soap:operation soapAction="http://tempuri.org/IReminder/authenticate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registerUser">
+      <soap:operation soapAction="http://tempuri.org/IReminder/registerUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Reminder">
+    <wsdl:port name="BasicHttpBinding_IReminder" binding="tns:BasicHttpBinding_IReminder">
+      <soap:address location="http://localhost:8080/Reminder" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
